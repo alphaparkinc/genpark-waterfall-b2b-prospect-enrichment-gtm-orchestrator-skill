@@ -1,0 +1,38 @@
+{
+  "name": "genpark-waterfall-b2b-prospect-enrichment-gtm-orchestrator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 50+ provider waterfall B2B lead enrichment orchestrator generating verified prospect data and personalized outbound GTM campaigns.",
+  "author": "genpark",
+  "category": "sales-gtm",
+  "tags": [
+    "b2b-enrichment",
+    "waterfall-gtm",
+    "lead-generation",
+    "outbound-automation",
+    "clay-ai"
+  ],
+  "inputs": {
+    "target_company_domain": {
+      "type": "string"
+    },
+    "prospect_title_filter": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "campaign_id": {
+      "type": "string"
+    },
+    "verified_decision_makers_found": {
+      "type": "integer"
+    },
+    "work_email_deliverability_rate_pct": {
+      "type": "number"
+    },
+    "crm_hubspot_salesforce_synced": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
